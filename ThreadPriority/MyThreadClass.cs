@@ -11,20 +11,20 @@ namespace ThreadPriority
     {
         public static void Thread1()
         {
-            for (int LoopCount = 0; LoopCount < 6; LoopCount++)
+            for (int LoopCount = 0; LoopCount < 3; LoopCount++)
             {
                 Thread thread = Thread.CurrentThread;
                 Console.WriteLine("Name of Thread: " + thread.Name + " = " + LoopCount);
-                Thread.Sleep(1500);
+                Thread.Sleep(500);
             }
-        }//Thread1
+        }
 
 
         public static void Thread2() { 
-            for (int LoopCount = 0; LoopCount < 6; LoopCount++)
+            for (int i = 0; i  < 6; i++)
             {
                 Thread thread = Thread.CurrentThread;
-                Console.WriteLine("Name of Thread: " + thread.Name + " = " + LoopCount);
+                Console.WriteLine("Name of Thread: " + thread.Name + " = " + i);
                 Thread.Sleep(1500); 
             }
 

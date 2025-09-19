@@ -36,6 +36,7 @@
             // 
             this.lblDisplay.AutoSize = true;
             this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.lblDisplay.ForeColor = System.Drawing.Color.White;
             this.lblDisplay.Location = new System.Drawing.Point(124, 76);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(227, 39);
@@ -57,6 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(500, 270);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.lblDisplay);
