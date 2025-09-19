@@ -1,6 +1,6 @@
 ﻿namespace ThreadPriority
 {
-    partial class Form1
+    partial class frmTrackThread
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDisplay = new System.Windows.Forms.Label();
+            this.btnRun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblDisplay
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(161, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblDisplay.AutoSize = true;
+            this.lblDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.lblDisplay.Location = new System.Drawing.Point(124, 76);
+            this.lblDisplay.Name = "lblDisplay";
+            this.lblDisplay.Size = new System.Drawing.Size(227, 39);
+            this.lblDisplay.TabIndex = 0;
+            this.lblDisplay.Text = "-Thread Start-";
             // 
-            // Form1
+            // btnRun
+            // 
+            this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnRun.Location = new System.Drawing.Point(176, 164);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(115, 38);
+            this.btnRun.TabIndex = 1;
+            this.btnRun.Text = "Run";
+            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // frmTrackThread
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 270);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.btnRun);
+            this.Controls.Add(this.lblDisplay);
+            this.Name = "frmTrackThread";
+            this.Text = "frmTrackThread";
+            this.Load += new System.EventHandler(this.frmTrackThread_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -55,7 +70,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.Button btnRun;
     }
 }
 

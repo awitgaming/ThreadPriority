@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ThreadPriority
 {
-    public partial class Form1 : Form
+    public partial class frmTrackThread : Form
     {
-        public Form1()
+        public frmTrackThread()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmTrackThread_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
